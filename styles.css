@@ -12,7 +12,12 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   position: absolute;
   top: 50px;
-  font-size: x-large;
+  left: 50px;
+  font-size: 35px;
+  padding: 10px;
+  border: black solid;
+  border-radius: 10px;
+  background-color: #565656;
 }
 .carousel {
   width: 100vw;
