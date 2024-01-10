@@ -92,3 +92,13 @@ body {
 .carousel-button.next {
   right: 1rem;
 }
+nav {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+nav a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
