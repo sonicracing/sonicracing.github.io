@@ -15,7 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom, #000000, #00000000);
+  background-color: #1f1f1f;
 }
 
 .fade {
@@ -61,6 +61,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 24px;
 }
 
 /* Change the link color to #111 (black) on hover */
