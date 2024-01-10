@@ -1,18 +1,23 @@
-const buttons = document.querySelectorAll("[data-carousel-button]");
+document.addEventListener("DOMContentLoaded", function () {
+  const photos = document.querySelectorAll(".fade");
+  let currentPhotoIndex = 0;
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-    const slides = button
-      .closest("[data-carousel]")
-      .querySelector("[data-slides]");
+  function showNextPhoto() {
+    photos[currentPhotoIndex].style.display = "none";
+    currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+    photos[currentPhotoIndex].style.display = "block";
+  }
 
-    const activeSlide = slides.querySelector("[data-active]");
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-    if (newIndex < 0) newIndex = slides.children.length - 1;
-    if (newIndex >= slides.children.length) newIndex = 0;
+  // Initial setup
+  photos[currentPhotoIndex].style.display = "block";
 
-    slides.children[newIndex].dataset.active = true;
-    delete activeSlide.dataset.active;
-  });
+  // Automatically switch photos every 5 seconds (adjust as needed)
+  setInterval(showNextPhoto, 4000);
 });
+
+/* Existing JavaScript remains unchanged */
+
+function redirectToListenLive() {
+  // Replace 'your_listen_live_url' with the actual URL you want to redirect to
+  window.location.href = "listenlive.html";
+}
