@@ -21,3 +21,5 @@ function redirectToListenLive() {
   // Replace 'your_listen_live_url' with the actual URL you want to redirect to
   window.location.href = "listenlive.html";
 }
+let right = document.getElementById("right");
+right.addEventListener;
