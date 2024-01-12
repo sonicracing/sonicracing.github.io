@@ -16,16 +16,18 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #1f1f1f;
+  margin: 0px;
 }
 
 .fade {
-  border-radius: 1rem;
   display: none;
   width: 100%; /* Adjust the width as needed */
   height: 700px; /* Adjust the height as needed */
   object-fit: cover; /* Preserve aspect ratio while covering the container */
   animation: fadeInOut 4s 2; /* Set the iteration count to 2 */
   text-align: center;
+  margin: 0px;
+  overflow-x: visible;
 }
 
 @keyframes fadeInOut {
@@ -51,7 +53,9 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
-
+.slide-image {
+  border-radius: 15px;
+}
 li {
   float: right;
 }
