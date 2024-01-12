@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
     photos[currentPhotoIndex].style.display = "block";
   }
+  function showPrevPhoto() {
+    photos[currentPhotoIndex].style.display = "none";
+    currentPhotoIndex = (currentPhotoIndex - 1) % photos.length;
+    photos[currentPhotoIndex].style.display = "block";
+  }
 
   // Initial setup
   photos[currentPhotoIndex].style.display = "block";
@@ -22,4 +27,6 @@ function redirectToListenLive() {
   window.location.href = "listenlive.html";
 }
 let right = document.getElementById("right");
-right.addEventListener;
+right.addEventListener("click", showNextPhoto);
+let left = document.getElementById("left");
+left.addEventListener("click", showPrevPhoto);
