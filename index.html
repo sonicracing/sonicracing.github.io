@@ -28,31 +28,6 @@
       background-color: rgba(0, 0, 0, 0.8);
     }
   </style>
-  <script>
-    let slideIndex = 0;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("fade");
-      if (slideIndex >= slides.length) { slideIndex = 0 }
-      if (slideIndex < 0) { slideIndex = slides.length - 1 }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      // alert("n:" + n + " slideIndex:" + slideIndex);
-      slides[slideIndex].style.display = "block";
-    };
-  </script>
 </head>
 
 <body>
@@ -69,7 +44,7 @@
     </ul>
   </nav>
   <a class="next" onclick="showPrevPhoto()">❮</a>
-  <a style="right:0px;" class="next" onclick="plusSlides(1)">❯</a>
+  <a style="right:0px;" class="next" onclick="showNextPhoto()">❯</a>
   <div class="photo-gallery">
     <div class="fade">
       <img class="slide-image" src="images/blufish19.JPG" alt="Photo 1" />
@@ -86,7 +61,6 @@
       <img class="slide-image" src="images/sushi1.jpg" alt="Photo 4" />
     </div>
   </div>
-
 </body>
 
 </html>

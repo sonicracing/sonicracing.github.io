@@ -5,23 +5,27 @@
 // });
 
 function showNextPhoto() {
-  const photos = document.querySelectorAll(".fade");
+  var photos = document.querySelectorAll(".fade");
 
   photos[currentPhotoIndex].style.display = "none";
   currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
   photos[currentPhotoIndex].style.display = "block";
 }
 function showPrevPhoto() {
-  const photos = document.querySelectorAll(".fade");
+  var photos = document.querySelectorAll(".fade");
   photos[currentPhotoIndex].style.display = "none";
+
   currentPhotoIndex = (currentPhotoIndex - 1) % photos.length;
+  if (currentPhotoIndex < 0) {
+    currentPhotoIndex = photos.length - 1;
+  }
   photos[currentPhotoIndex].style.display = "block";
 }
 
 var currentPhotoIndex = 0;
 
 // Automatically switch photos every 5 seconds (adjust as needed)
-//  setInterval(showNextPhoto, 4000);
+setInterval(showNextPhoto, 4000);
 
 /* Existing JavaScript remains unchanged */
 
