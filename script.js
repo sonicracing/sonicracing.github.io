@@ -1,24 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
+//   const photos = document.querySelectorAll(".fade");
+//   // Initial setup
+//   photos[currentPhotoIndex].style.display = "block";
+// });
+
+function showNextPhoto() {
   const photos = document.querySelectorAll(".fade");
-  let currentPhotoIndex = 0;
 
-  function showNextPhoto() {
-    photos[currentPhotoIndex].style.display = "none";
-    currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
-    photos[currentPhotoIndex].style.display = "block";
-  }
-  function showPrevPhoto() {
-    photos[currentPhotoIndex].style.display = "none";
-    currentPhotoIndex = (currentPhotoIndex - 1) % photos.length;
-    photos[currentPhotoIndex].style.display = "block";
-  }
-
-  // Initial setup
+  photos[currentPhotoIndex].style.display = "none";
+  currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
   photos[currentPhotoIndex].style.display = "block";
+}
+function showPrevPhoto() {
+  const photos = document.querySelectorAll(".fade");
+  photos[currentPhotoIndex].style.display = "none";
+  currentPhotoIndex = (currentPhotoIndex - 1) % photos.length;
+  photos[currentPhotoIndex].style.display = "block";
+}
 
-  // Automatically switch photos every 5 seconds (adjust as needed)
-  setInterval(showNextPhoto, 4000);
-});
+var currentPhotoIndex = 0;
+
+// Automatically switch photos every 5 seconds (adjust as needed)
+//  setInterval(showNextPhoto, 4000);
 
 /* Existing JavaScript remains unchanged */
 
