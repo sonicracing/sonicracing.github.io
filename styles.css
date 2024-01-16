@@ -109,6 +109,10 @@ li a:hover {
   top: 20px;
   right: 20px;
 }
+.drop-down-content {
+  font-size: x-large;
+  position: absolute;
+}
 @media screen and (max-width: 810px) {
   li a {
     visibility: hidden;
