@@ -22,7 +22,7 @@ body {
 .fade {
   display: none;
   width: 100%; /* Adjust the width as needed */
-  height: 100%; /* Adjust the height as needed */
+  height: auto; /* Adjust the height as needed */
   object-fit: cover; /* Preserve aspect ratio while covering the container */
   animation: fadeInOut 4s 2; /* Set the iteration count to 2 */
   text-align: center;
