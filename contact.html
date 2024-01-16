@@ -6,6 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-form {
+      max-width: 600px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+
+    form {
+      display: grid;
+      grid-gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    section {
+      color: #454547;
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+      font-size: 25px;
+      z-index: 10;
+    }
+  </style>
 </head>
 
 <body>
@@ -29,6 +61,22 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642.5125613858529!2d-97.13839655351782!3d49.89785999551049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea715cbeaaffb1%3A0x4351188639f38578!2sBlufish%20Japanese%20Restaurant!5e0!3m2!1sen!2sca!4v1705191692886!5m2!1sen!2sca"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+      <section class="contact-form" style="margin-bottom: 150px;">
+        <form action="#" method="get">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </div>
   </div>
 </body>
