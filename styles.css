@@ -115,7 +115,7 @@ li a:hover {
 }
 @media screen and (max-width: 810px) {
   li a {
-    visibility: hidden;
+    display: none;
   }
 
   .hamburger {
