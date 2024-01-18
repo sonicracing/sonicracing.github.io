@@ -46,7 +46,6 @@ nav {
   z-index: 3;
   background-color: white;
   margin: 0px;
-  padding-bottom: 15px;
 }
 ul {
   list-style-type: none;
@@ -121,4 +120,8 @@ li a:hover {
   .hamburger {
     visibility: visible;
   }
+}
+.logo {
+  width: 100px;
+  height: 60px;
 }
