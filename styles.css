@@ -27,8 +27,7 @@ body {
   animation: fadeInOut 4s 2; /* Set the iteration count to 2 */
   text-align: center;
   margin: 0px;
-  overflow-x: visible;
-  background-color: (#f26101, #08aeea), rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
 }
 
 @keyframes fadeInOut {
