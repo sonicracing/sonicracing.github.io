@@ -28,6 +28,7 @@ body {
   text-align: center;
   margin: 0px;
   overflow-x: visible;
+  background-color: (#f26101, #08aeea), rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeInOut {
