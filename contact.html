@@ -9,10 +9,11 @@
   <link rel="icon" type="image/x-icon" href="images/modern_blufish.png" />
   <style>
     .contact-form {
-      max-width: 600px;
+      max-width: 1200px;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-top: 50px;
+      overflow: visible;
     }
 
     form {
@@ -29,33 +30,45 @@
       width: 100%;
       padding: 10px;
       box-sizing: border-box;
+      font-size: 2rem;
     }
 
     section {
-      color: #454547;
       font-family: 'Georgia', serif;
       font-weight: bold;
-      font-size: 25px;
+      font-size: 1rem;
       z-index: 10;
+    }
+
+    .contact-button {
+      height: 2rem;
+      text-align: center;
+      font-size: 1.1rem;
     }
   </style>
 </head>
 
 <body>
   <nav>
-    <ul>
+    <div>
       <logo><a href="index.html"><img class="logo" src="images/modern_blufish.png"></a></logo>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
-      <li><a href="order.html">Order</a>
-      </li>
-      <li><a
-          href="https://order.online/store/blufish-japanese-restaurant-winnipeg-951146/?hideModal=true&pickup=true">Menu</a>
-      </li>
-      <li><a href="index.html">Home</a></li>
-    </ul>
+    </div>
+    <div>
+      <ul>
+        <li><img class="hamburger" src="images/hamburger.png" alt="hamburger menu"></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a
+            href="https://order.online/store/blufish-japanese-restaurant-winnipeg-951146/?hideModal=true&pickup=true">Menu</a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
   </nav>
-  <h1 class="background-header-image">Contact</h1>
+  <header>
+    <h1 class="background-header-image">Contact</h1>
+  </header>
   <div style="display: flex;justify-content: center;">
     <div>
       <iframe style="margin: 50px;border-radius: 15px;width: 600px;height: 600px;"
@@ -63,22 +76,20 @@
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div>
-      <section class="contact-form" style="margin-bottom: 150px;">
-        <form action="#" method="get">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+    <section class="contact-form" style="margin-bottom: 150px;">
+      <form action="#" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </div>
+        <button class="contact-button" type="submit">Submit</button>
+      </form>
+    </section>
   </div>
 </body>
 

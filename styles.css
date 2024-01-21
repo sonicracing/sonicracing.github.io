@@ -3,20 +3,25 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  --link-color: #2596be;
+  --link-hover-color: #2596be;
+}
 .flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 body {
-  margin: 0;
+  margin: 0px;
 }
 .photo-gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   background-color: #1f1f1f;
   margin: 0px;
+  overflow-y: hidden;
 }
 
 .fade {
@@ -43,14 +48,21 @@ body {
 nav {
   position: sticky;
   top: 0px;
-  z-index: 3;
+  z-index: 11;
   background-color: white;
   margin: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div {
+  margin: 0px 20px 0px 20px;
+  align-self: center;
 }
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow: hidden;
   background-color: white;
 }
@@ -63,7 +75,7 @@ li {
 
 li a {
   display: block;
-  color: darkblue;
+  color: var(--link-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -75,6 +87,7 @@ li a {
 li a:hover {
   opacity: 0.7;
 }
+
 .background-header-image {
   font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -123,5 +136,34 @@ li a:hover {
 }
 .logo {
   width: 100px;
-  height: 60px;
+  height: auto;
+}
+.reservation-link {
+  color: white;
+  background-color: var(--link-hover-color);
+  border-radius: 5px;
+  border: solid var(--link-hover-color) 2px;
+}
+.reservation-link:hover {
+  opacity: 1;
+  background-color: white;
+  border: solid --link-hover-color 2px;
+  color: var(--link-hover-color);
+}
+
+.highlight-details {
+  border: 1px blue solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.highlight-detail {
+  border: 1px red solid;
+  display: inline-block;
+  height: 400px;
+  position: relative;
+  width: 30%;
+  margin-right: 2%;
 }

@@ -10,10 +10,15 @@
   <title>Home</title>
   <link rel="icon" type="image/x-icon" href="images/modern_blufish.png" />
   <style>
+    :root {
+      --link-color: #2596be;
+      --link-hover-color: #2596be;
+    }
+
     .next {
       cursor: pointer;
       position: absolute;
-      top: 50%;
+      top: 40%;
       padding: 16px;
       color: white;
       font-weight: bold;
@@ -30,11 +35,17 @@
 
     .slide-details {
       position: absolute;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
       z-index: 1;
-      left: 20%;
+      left: 10%;
       top: 50%;
-      background-color: grey;
-      padding: 16px;
+      width: 40%;
+      height: auto;
+      background-color: white;
+      opacity: 50%;
+      padding: 20px;
       border-radius: 10px;
       font-family: Arial, Helvetica, sans-serif;
       border: solid black 1px;
@@ -43,18 +54,21 @@
       animation-fill-mode: forwards;
     }
 
+    .slide-details div {
+      padding: 20px;
+      background-color: white;
+      color: var(--link-color);
+    }
+
     .learn-more {
-      position: absolute;
       z-index: 1;
-      left: 20%;
-      top: 65%;
-      background-color: grey;
+      background-color: var(--link-color);
       padding: 16px;
       border-radius: 10px;
       font-family: Arial, Helvetica, sans-serif;
       border: solid black 1px;
       text-decoration: none;
-      color: black;
+      color: white;
       animation: fadeInAnimation ease 3s;
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
@@ -82,43 +96,85 @@
 
 <body>
   <nav>
-    <ul>
+    <div>
       <logo><a href="index.html"><img class="logo" src="images/modern_blufish.png"></a></logo>
-      <li><img class="hamburger" src="images/hamburger.png" alt="hamburger menu"></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
-      <li><a href="order.html">Order</a></li>
-      <li><a
-          href="https://order.online/store/blufish-japanese-restaurant-winnipeg-951146/?hideModal=true&pickup=true">Menu</a>
-      </li>
-      <li><a href="index.html">Home</a></li>
-    </ul>
+    </div>
+    <div>
+      <ul>
+        <li><img class="hamburger" src="images/hamburger.png" alt="hamburger menu"></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a
+            href="https://order.online/store/blufish-japanese-restaurant-winnipeg-951146/?hideModal=true&pickup=true">Menu</a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
   </nav>
-  <a class="next" onclick="showPrevPhoto()">❮</a>
-  <a style="right:0px;" class="next" onclick="showNextPhoto()">❯</a>
-  <div class="photo-gallery">
-    <div class="fade">
-      <img class="slide-image" src="images/blufish19.JPG" alt="Veggie Caterpillar Roll Sushi in blufish" />
-      <h1 class="slide-details">
-        Book Lunch or Dinner</h1>
-      <a class="learn-more" href="schedule.html">Learn More</a>
+  <main>
+    <a class="next" onclick="showPrevPhoto()">❮</a>
+    <a style="right:0px;" class="next" onclick="showNextPhoto()">❯</a>
+    <div class="photo-gallery">
+      <div class="fade">
+        <img class="slide-image" src="images/blufish19.JPG" alt="Veggie Caterpillar Roll Sushi in blufish" />
+        <div class="slide-details">
+          <div>
+            <h1>
+              Book Lunch or Dinner
+            </h1>
+          </div>
+          <div>
+            <a class="learn-more" href="reservations.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="fade">
+        <img class="slide-image" src="images/blufish7.jpg"
+          alt="Sushi with avocado in it with caviar on the top of it." />
+        <div class="slide-details">
+          <div>
+            <h1>
+              The best restaurant in Winnipeg for sushi and sashimi!</h1>
+          </div>
+          <div>
+            <a class="learn-more" href="menu.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="fade">
+        <img class="slide-image" src="images/salad.jpg" alt="Sumoku Raw" />
+        <div class="slide-details">
+          <div>
+            <h1>
+              "Great Food, great service!"
+            </h1>
+          </div>
+          <div>
+            <a class="learn-more" href="schedule.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="fade">
+        <img class="slide-image" src="images/sushi1.jpg" alt="A long piece of sushi." />
+        <div class="slide-details">
+          <div>
+            <h1>
+              "The food here was absolutely divine and very affordable!"
+            </h1>
+          </div>
+          <div>
+            <a class="learn-more" href="schedule.html">Learn More</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="fade">
-      <img class="slide-image" src="images/blufish7.jpg" alt="Sushi with avocado in it with caviar on the top of it." />
-      <h1 class="slide-details">"The best restaurant in Winnipeg for sushi and sashimi!"</h1>
-      <a class="learn-more" href="menu.html">Learn More</a>
-    </div>
-    <div class="fade">
-      <img class="slide-image" src="images/salad.jpg" alt="Sumoku Raw" />
-      <h1 class="slide-details">
-        "Great Food, great service!"</h1>
-      <a class="learn-more" href="schedule.html">Learn More</a>
-    </div>
-    <div class="fade">
-      <img class="slide-image" src="images/sushi1.jpg" alt="A long piece of sushi." />
-      <h1 class="slide-details">
-        "The food here was absolutely divine and very affordable!"</h1>
-      <a class="learn-more" href="schedule.html">Learn More</a>
+  </main>
+  <div>
+    <div class="highlight-details">
+      <div class="highlight-detail"></div>
+      <div class="highlight-detail"> </div>
+      <div class="highlight-detail"></div>
     </div>
   </div>
 </body>
