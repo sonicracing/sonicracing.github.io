@@ -91,12 +91,44 @@
         transform: translateY(0px);
       }
     }
+
+    .review {
+      width: 30%;
+      height: auto;
+      padding: 1rem;
+      border: solid 2px black;
+      border-radius: 10px;
+    }
+
+    .review-container {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .review-person {
+      margin: 10px;
+    }
+
+    .review-quote {
+      font-size: 2rem;
+      margin: 0px;
+    }
+
+    .stars {
+      color: orange;
+      font-size: 3rem;
+      margin: 0px;
+    }
   </style>
 </head>
 
 <body>
+  <!-- navigation bar -->
   <nav>
     <div>
+      <!-- logo -->
       <logo><a href="index.html"><img class="logo" src="images/modern_blufish.png"></a></logo>
     </div>
     <div>
@@ -113,9 +145,12 @@
     </div>
   </nav>
   <main>
+    <!--arrows for slideshow  -->
     <a class="next" onclick="showPrevPhoto()">❮</a>
     <a style="right:0px;" class="next" onclick="showNextPhoto()">❯</a>
+    <!-- slideshow -->
     <div class="photo-gallery">
+      <!-- slide 1 -->
       <div class="fade">
         <img class="slide-image" src="images/blufish19.JPG" alt="Veggie Caterpillar Roll Sushi in blufish" />
         <div class="slide-details">
@@ -129,6 +164,7 @@
           </div>
         </div>
       </div>
+      <!-- slide 2 -->
       <div class="fade">
         <img class="slide-image" src="images/blufish7.jpg"
           alt="Sushi with avocado in it with caviar on the top of it." />
@@ -142,6 +178,7 @@
           </div>
         </div>
       </div>
+      <!-- slide 3 -->
       <div class="fade">
         <img class="slide-image" src="images/salad.jpg" alt="Sumoku Raw" />
         <div class="slide-details">
@@ -155,6 +192,7 @@
           </div>
         </div>
       </div>
+      <!-- slide 4 -->
       <div class="fade">
         <img class="slide-image" src="images/sushi1.jpg" alt="A long piece of sushi." />
         <div class="slide-details">
@@ -170,8 +208,26 @@
       </div>
     </div>
   </main>
-
-
+  <!-- Reviews -->
+  <section class="review-container">
+    <div class="review">
+      <p class="stars">&starf;&starf;&starf;&starf;&starf;</p>
+      <p class="review-quote">"Did great with gluten free"</p>
+      <p class="review-person">Jeremy</p>
+    </div>
+    <div class="review">
+      <p class="stars">&starf;&starf;&starf;&starf;&starf;</p>
+      <p class="review-quote">"Blufish ALWAYS the BEST"</p>
+      <p class="review-person">Tobi</p>
+    </div>
+    <div class="review">
+      <p class="stars">&starf;&starf;&starf;&starf;&starf;</p>
+      <p class="review-quote">The best for celiac disease</p>
+      <p class="review-person">Mykayla</p>
+    </div>
+    </div>
+  </section>
+  <!-- footer -->
   <footer>
     <div class="footer-div">
       <div class="footer-column">
@@ -186,26 +242,28 @@
         <a href="#" class="fa fa-google"></a>
       </div>
     </div>
-    <div class="footer-div">
-      <ul>
-        <li>
-          <a href='https://twitter.com/cafecarlo' class='icon et_pb_with_border' title='Follow on X'
-            target="_blank"><span>Follow</span></a>
-        </li>
-        <li>
-          <a href='https://twitter.com/cafecarlo' class='icon et_pb_with_border' title='Follow on X'
-            target="_blank"><span>Follow</span></a>
-        </li>
-        <li>
-          <a href='https://twitter.com/cafecarlo' class='icon et_pb_with_border' title='Follow on X'
-            target="_blank"><span>Follow</span></a>
-        </li>
-        <li>
-          <a href='https://twitter.com/cafecarlo' class='icon et_pb_with_border' title='Follow on X'
-            target="_blank"><span>Follow</span></a>
-        </li>
-      </ul>
-    </div>
+    <div class="review-container">
+
+      <div class="footer-div">
+        <ul>
+          <li>
+            <a class="social-icon" href='https://twitter.com/cafecarlo' class="fa fa-facebook" title='Follow on X'
+              target="_blank"><span>Follow</span></a>
+          </li>
+          <li>
+            <a class="social-icon" href='https://twitter.com/cafecarlo' class="fa fa-twitter" title='Follow on X'
+              target="_blank"><span>Follow</span></a>
+          </li>
+          <li>
+            <a class="social-icon" href='https://twitter.com/cafecarlo' class='icon et_pb_with_border'
+              title='Follow on X' target="_blank"><span>Follow</span></a>
+          </li>
+          <li>
+            <a class="social-icon" href='https://twitter.com/cafecarlo' class='icon et_pb_with_border'
+              title='Follow on X' target="_blank"><span>Follow</span></a>
+          </li>
+        </ul>
+      </div>
   </footer>
 </body>
 
