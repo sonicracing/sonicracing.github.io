@@ -8,12 +8,34 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/x-icon" href="images/modern_blufish.png" />
   <style>
+    :root {
+      --link-color: #2596be;
+      --link-hover-color: #2596be;
+    }
+
     .contact-form {
-      max-width: 1200px;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-top: 50px;
       overflow: visible;
+      width: 40%;
+    }
+
+    .contact-email-phone {
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+      width: 40%;
+      margin-right: 2rem;
+      min-height: 500px;
+      background-image: url("images/gallery.png");
+      color: var(--link-color);
+    }
+
+    .contact-info {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      font-size: 2rem;
     }
 
     form {
@@ -34,13 +56,15 @@
     }
 
     section {
-      font-family: 'Georgia', serif;
       font-weight: bold;
       font-size: 1rem;
       z-index: 10;
     }
 
     .contact-button {
+      background-color: var(--link-color);
+      color: white;
+      border: none;
       height: 2rem;
       text-align: center;
       font-size: 1.1rem;
@@ -70,13 +94,15 @@
     <h1 class="background-header-image">Contact</h1>
   </header>
   <div style="display: flex;justify-content: center;">
-    <div>
-      <iframe style="margin: 50px;border-radius: 15px;width: 600px;height: 600px;"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642.5125613858529!2d-97.13839655351782!3d49.89785999551049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea715cbeaaffb1%3A0x4351188639f38578!2sBlufish%20Japanese%20Restaurant!5e0!3m2!1sen!2sca!4v1705191692886!5m2!1sen!2sca"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="contact-email-phone">
+      <div class="contact-info">
+        <p class="small-title">Email:</p>
+        <p class="small-detail"> <a href="mailto:sushi@blufish.ca">sushi@blufish.ca</a></p>
+        <p class="small-title">phone:</p>
+        <p class="small-detail"> <a href="tel:(204) 779-9888">(204) 779-9888</a></p>
+      </div>
     </div>
-    <section class="contact-form" style="margin-bottom: 150px;">
+    <div class="contact-form">
       <form action="#" method="get">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -89,8 +115,8 @@
 
         <button class="contact-button" type="submit">Submit</button>
       </form>
-    </section>
-  </div>
+      </section>
+    </div>
 </body>
 
 </html>
