@@ -4,6 +4,7 @@
 //   photos[currentPhotoIndex].style.display = "block";
 // });
 
+//function for showing the next photo in slideshow
 function showNextPhoto() {
   var photos = document.querySelectorAll(".fade");
 
