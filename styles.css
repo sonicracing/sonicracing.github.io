@@ -177,7 +177,7 @@ li a:hover {
 }
 
 .highlight-detail {
-  border: 1px red solid;
+  border: 1px black solid;
   display: inline-block;
   height: 400px;
   position: relative;
