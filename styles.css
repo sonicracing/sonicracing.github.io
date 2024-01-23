@@ -34,7 +34,7 @@ body {
   animation: fadeInOut 4s 2; /* Set the iteration count to 2 */
   text-align: center;
   margin: 0px;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 @keyframes fadeInOut {
@@ -186,4 +186,47 @@ p.small-detail {
   color: var(--link-color);
   font-size: 1.5rem;
   text-decoration: none;
+}
+
+/*footer styles*/
+.footer-div {
+  display: flex;
+  margin-top: 30px;
+  background-color: var(--link-color) !important;
+  justify-content: center;
+}
+
+/*columns div styles */
+.col4 {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  border: #1f1f1f 2px solid;
+  min-height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-div {
+    flex-direction: column;
+  }
+  .col4 {
+    width: 100vw;
+  }
+  body {
+    width: 120vw;
+  }
+}
+
+/*social media icons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
 }
