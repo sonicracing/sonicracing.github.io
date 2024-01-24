@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
   <title>Home</title>
@@ -16,7 +15,7 @@
       --link-hover-color: #2596be;
     }
 
-    /* slide show mover arrows css stylingh= */
+    /* slide show mover arrows css styling*/
     .next {
       cursor: pointer;
       position: absolute;
@@ -27,8 +26,13 @@
       font-size: 100px;
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
+      -webkit-user-select: none;
       user-select: none;
       z-index: 10;
+    }
+
+    #rightarrow {
+      right: 0px;
     }
 
     .next:hover {
@@ -97,6 +101,18 @@
       }
     }
 
+    @-o-keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
     /* review section styles */
     .review {
       width: 30%;
@@ -147,7 +163,8 @@
   <nav>
     <div>
       <!-- logo -->
-      <logo><a href="index.html"><img class="logo" src="images/modern_blufish.png"></a></logo>
+      <logo><a href="index.html"><img class="logo" title="logo" src="images/modern_blufish.png"
+            title="modern_blufish_logo" alt="a modern logo which resembles a blue fish"></a></logo>
     </div>
     <div>
       <ul>
@@ -165,7 +182,7 @@
   <main>
     <!--arrows for slideshow  -->
     <a class="next" onclick="showPrevPhoto()">❮</a>
-    <a style="right:0px;" class="next" onclick="showNextPhoto()">❯</a>
+    <a id="rightarrow" class="next" onclick="showNextPhoto()">❯</a>
     <!-- slideshow -->
     <div class="photo-gallery">
       <!-- slide 1 -->
