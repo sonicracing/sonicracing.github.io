@@ -13,6 +13,18 @@
   display: flex;
   justify-content: center;
 }
+
+.flex div {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 810px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
 /*defines basic font for everything */
 body {
   margin: 0px;
@@ -186,6 +198,16 @@ li a:hover {
   overflow: hidden;
 }
 
+@media screen and (max-width: 810px) {
+  .highlight-detail {
+    width: 98%;
+    margin: 10px auto;
+  }
+
+  .highlight-details {
+    flex-direction: column;
+  }
+}
 .small-title {
   margin: 0px;
   font-size: 1.2rem;

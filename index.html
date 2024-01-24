@@ -79,7 +79,8 @@
 
     @media screen and (max-width: 810px) {
       .slide-details {
-        font-size: 20px;
+        font-size: 16px;
+        top: 20%;
       }
     }
 
@@ -96,7 +97,7 @@
       }
     }
 
-    /* review section css */
+    /* review section styles */
     .review {
       width: 30%;
       height: auto;
@@ -125,6 +126,18 @@
       color: orange;
       font-size: 3rem;
       margin: 0px;
+    }
+
+    @media screen and (max-width: 810px) {
+      .review-container {
+        flex-direction: column;
+      }
+
+      .review {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
@@ -262,8 +275,44 @@
         <logo><a href="index.html"><img class="logo" src="images/modern_blufish.png"></a></logo>
       </div>
       <div class="col4 footer-col">
+        <div>
+          Location
+        </div>
+        <div>
+          179 Bannatyne Ave,
+
+          Winnipeg, MB R3B 0R4
+        </div>
       </div>
       <div class="col4 footer-col">
+        <div>
+          Opening Hours
+        </div>
+        <div>
+          <span class="footer-open-day"></span>
+          <span class="footer-open-hour"></span>
+
+          <span class="footer-open-day">Monday</span>
+          <span class="footer-open-hour">4:30 PM - 9:45 PM</span>
+
+          <span class="footer-open-day">Tuesday</span>
+          <span class="footer-open-hour">4:30 PM - 9:45 PM</span>
+
+          <span class="footer-open-day">Wednesday</span>
+          <span class="footer-open-hour">4:30 PM - 9:45 PM</span>
+
+          <span class="footer-open-day">Thursday</span>
+          <span class="footer-open-hour">11:15 AM - 9:45 PM</span>
+
+          <span class="footer-open-day">Friday</span>
+          <span class="footer-open-hour">11:15 AM - 9:45 PM</span>
+
+          <span class="footer-open-day">Saturday</span>
+          <span class="footer-open-hour">4:30 PM - 11:15 PM</span>
+
+          <span class="footer-open-day">Sunday</span>
+          <span class="footer-open-hour">4:00 PM - 9:15 PM</span>
+        </div>
       </div>
       <div class="col4 footer-col">
         <div>
