@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/CSS/styles.css" />
   <link rel="icon" type="image/x-icon" href="images/modern_blufish.png" />
   <style>
     :root {
@@ -95,32 +95,34 @@
   <header>
     <h1 class="background-header-image">Contact</h1>
   </header>
-  <!-- Contact Info -->
-  <div style="display: flex;justify-content: center;">
-    <div class="contact-email-phone">
-      <div class="contact-info">
-        <p class="small-title">Email:</p>
-        <p class="small-detail"> <a href="mailto:sushi@blufish.ca">sushi@blufish.ca</a></p>
-        <p class="small-title">phone:</p>
-        <p class="small-detail"> <a href="tel:(204) 779-9888">(204) 779-9888</a></p>
+  <main>
+    <!-- Contact Info -->
+    <div style="display: flex;justify-content: center;">
+      <div class="contact-email-phone">
+        <div class="contact-info">
+          <p class="small-title">Email:</p>
+          <p class="small-detail"> <a href="mailto:sushi@blufish.ca">sushi@blufish.ca</a></p>
+          <p class="small-title">phone:</p>
+          <p class="small-detail"> <a href="tel:(204) 779-9888">(204) 779-9888</a></p>
+        </div>
       </div>
-    </div>
-    <!-- contact form for message -->
-    <div class="contact-form">
-      <form action="#" method="get">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+      <!-- contact form for message -->
+      <div class="contact-form">
+        <form action="#" method="get">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button class="contact-button" type="submit">Submit</button>
-      </form>
-      </section>
-    </div>
+          <button class="contact-button" type="submit">Submit</button>
+        </form>
+        </section>
+      </div>
+  </main>
 </body>
 
 </html>

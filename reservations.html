@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reservations</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/CSS/styles.css" />
   <link rel="icon" type="image/x-icon" href="images/modern_blufish.png" />
   <style>
     :root {
@@ -98,70 +98,72 @@
   <header>
     <h1 class="background-header-image">Reservations</h1>
   </header>
-  <div class="flex">
-    <div class="contact-address">
-      <div class="contact-address-text">
+  <main>
+    <div class="flex">
+      <div class="contact-address">
+        <div class="contact-address-text">
+          <h2>
+            Address
+          </h2>
+          <p>179 Bannatyne Ave,</p>
+          <p> Winnipeg, MB R3B 0R4</p>
+        </div>
+        <!-- google maps iframe -->
+        <div class="contact-address-map">
+          <iframe title="googlemapsframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.0422039587033!2d-97.14037668866015!3d49.89801097137304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea715cbeaaffb1%3A0x4351188639f38578!2sBlufish%20Japanese%20Restaurant!5e0!3m2!1sen!2sus!4v1705871985186!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <!-- Opening hours code -->
+      <div class="contact-us-opening-hours">
         <h2>
-          Address
+          Opening Hours
         </h2>
-        <p>179 Bannatyne Ave,</p>
-        <p> Winnipeg, MB R3B 0R4</p>
+        <table style="margin: 0 auto;">
+          <tbody>
+            <tr class="open-hours-row">
+              <th class="open-day"> Monday </th>
+              <td class="open-hours"> 4:30 PM - 9:45 PM </td>
+            </tr>
+            <tr class="open-hours-row">
+              <th class="open-day"> Tuesday </th>
+              <td class="open-hours"> 4:30 PM - 9:45 PM </td>
+            </tr>
+            <tr class="open-hours-row">
+              <th class="open-day"> Wednesday </th>
+              <td class="open-hours"> 4:30 PM - 9:45 PM </td>
+            </tr>
+            <tr class="open-hours-row">
+              <th class="open-day"> Thursday </th>
+              <td class="open-hours"> 11:15 AM - 9:45 PM </td>
+            </tr>
+            <tr class="open-hours-row">
+              <th class="open-day"> Friday </th>
+              <td class="open-hours"> 11:15 AM - 11:15 PM </td>
+            </tr>
+            <tr class="open-hours-row">
+              <th class="open-day"> Saturday </th>
+              <td class="open-hours"> 4:30 PM - 11:15 PM </td>
+            </tr>
+            <tr class="open-hours-row">
+              <th class="open-day"> Sunday </th>
+              <td class="open-hours"> 4:00 PM - 9:15 PM </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Delivery times may vary</p>
       </div>
-      <!-- google maps iframe -->
-      <div class="contact-address-map">
-        <iframe title="googlemapsframe"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.0422039587033!2d-97.14037668866015!3d49.89801097137304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea715cbeaaffb1%3A0x4351188639f38578!2sBlufish%20Japanese%20Restaurant!5e0!3m2!1sen!2sus!4v1705871985186!5m2!1sen!2sus"
-          width="100%" height="100%" style="border:0;" allowfullscreen=""
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- reservation open table -->
+      <div class="find-table">
+        <iframe
+          src="https://www.opentable.com/widget/reservation/canvas?rid=330946&amp;type=standard&amp;theme=standard&amp;overlay=false&amp;domain=com&amp;lang=en&amp;r3uid=bgIqqz67A&amp;newtab=false&amp;color=1"
+          width="100%" height="100%" frameborder="0" scrolling="yes" name="opentable-make-reservation-widget"
+          title="Online Reservations | OpenTable, BluFish Japanese Restaurant"></iframe>
       </div>
     </div>
-    <!-- Opening hours code -->
-    <div class="contact-us-opening-hours">
-      <h2>
-        Opening Hours
-      </h2>
-      <table style="margin: 0 auto;">
-        <tbody>
-          <tr class="open-hours-row">
-            <th class="open-day"> Monday </th>
-            <td class="open-hours"> 4:30 PM - 9:45 PM </td>
-          </tr>
-          <tr class="open-hours-row">
-            <th class="open-day"> Tuesday </th>
-            <td class="open-hours"> 4:30 PM - 9:45 PM </td>
-          </tr>
-          <tr class="open-hours-row">
-            <th class="open-day"> Wednesday </th>
-            <td class="open-hours"> 4:30 PM - 9:45 PM </td>
-          </tr>
-          <tr class="open-hours-row">
-            <th class="open-day"> Thursday </th>
-            <td class="open-hours"> 11:15 AM - 9:45 PM </td>
-          </tr>
-          <tr class="open-hours-row">
-            <th class="open-day"> Friday </th>
-            <td class="open-hours"> 11:15 AM - 11:15 PM </td>
-          </tr>
-          <tr class="open-hours-row">
-            <th class="open-day"> Saturday </th>
-            <td class="open-hours"> 4:30 PM - 11:15 PM </td>
-          </tr>
-          <tr class="open-hours-row">
-            <th class="open-day"> Sunday </th>
-            <td class="open-hours"> 4:00 PM - 9:15 PM </td>
-          </tr>
-        </tbody>
-      </table>
-      <p>Delivery times may vary</p>
-    </div>
-    <!-- reservation open table -->
-    <div class="find-table">
-      <iframe
-        src="https://www.opentable.com/widget/reservation/canvas?rid=330946&amp;type=standard&amp;theme=standard&amp;overlay=false&amp;domain=com&amp;lang=en&amp;r3uid=bgIqqz67A&amp;newtab=false&amp;color=1"
-        width="100%" height="100%" frameborder="0" scrolling="yes" name="opentable-make-reservation-widget"
-        title="Online Reservations | OpenTable, BluFish Japanese Restaurant"></iframe>
-    </div>
-  </div>
+  </main>
 </body>
 
 </html>
