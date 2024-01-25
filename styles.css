@@ -6,6 +6,7 @@
 /* defines the color scheme */
 :root {
   --link-color: #2596be;
+  --white: #ffffff;
   --link-hover-color: #2596be;
 }
 /* flex container */
@@ -227,7 +228,7 @@ p.small-detail {
 .footer-div {
   display: flex;
   margin-top: 30px;
-  background-color: var(--link-color) !important;
+  background-color: var(--link-color);
   justify-content: center;
 }
 
@@ -236,10 +237,35 @@ p.small-detail {
   display: inline-block;
   position: relative;
   width: 20%;
-  border: #1f1f1f 2px solid;
-  min-height: 400px;
+  height: auto;
+  justify-content: center;
 }
 
+footer .col4 {
+  padding: 70px 10px;
+}
+.footer-col {
+  color: var(--white);
+  text-align: center;
+}
+
+.footer-col ul {
+  background-color: var(--link-color);
+}
+
+.footer-col ul li {
+  margin: 30px auto;
+  float: none;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.right-social {
+  padding-right: 50px;
+  margin-right: 0px;
+}
 @media screen and (max-width: 600px) {
   .footer-div {
     flex-direction: column;
@@ -259,6 +285,16 @@ p.small-detail {
   width: 50px;
   text-align: center;
   text-decoration: none;
+  margin: 5px 2px;
+  color: var(--link-color);
+  border: 1px white solid;
+  background-color: var(--white);
+  margin: auto 10px;
+  border-radius: 10px;
+}
+.fa::before {
+  color: var(--link-color);
+  background-color: var(--white);
 }
 
 /* Add a hover effect if you want */
