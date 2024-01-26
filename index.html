@@ -130,6 +130,14 @@
       margin-top: 1rem;
     }
 
+    /* make the review take up all the width on mobile */
+    @media screen and (max-width: 810px) {
+      .review {
+        width: 100vw;
+      }
+    }
+
+    /* review content styling */
     .review-person {
       margin: 10px;
     }
@@ -287,7 +295,8 @@
   <footer>
     <div class="footer-div">
       <div class="col4 footer-col" id="footer-logo-col">
-        <a href="index.html"><img class="footer-logo" src="images/bordered-blufish.png"></a>
+        <a href="index.html"><img class="footer-logo" src="images/bordered-blufish.png"
+            alt="the modern bluefish logo with a border on it."></a>
       </div>
       <div class="col4 footer-col">
         <h2>
@@ -345,13 +354,11 @@
       <div class="col4 footer-col">
         <ul>
           <li>
-            <a href="#" class="fa fa-facebook"></a>
+            <a href="https://www.facebook.com/blufishsushiwpg/" class="fa fa-facebook"></a>
           </li>
           <li>
-            <a href="#" class="fa fa-twitter"></a>
-          </li>
-          <li>
-            <a href="#" class="fa fa-google"></a>
+            <a href="https://food.google.com/chooseprovider?restaurantId=/g/1tywxm2q&g2lbs=AIQllVyYeCggMPbZZIV2NxaYCk1Nci62cFnIqIPA_c7XbGfQz-zRzFG-nbY1dIOAJm8tAEfVqL6sfGW9W0FXHJmew53LZ9BuytDsWJht0NgYRz77U2KLjZg0opE2bXYZgVHYyBFZHPGNuBYuecO3B_1JvQ25Ls8eQqeQRvuxhplrJkLdnOi8eflmAX1IyKcFMyO17Z8bIZGQ&hl=en-CA&gl=ca&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=bmOwZfveL56bptQPoqOJyAU&ei=bmOwZfveL56bptQPoqOJyAU&opi=89978449&addressId&orderType=2&partnerId=11344137403575542233&fulfillmentTime&menuSearchQuery&cartId&fo_s=OA&dineInLocationId&sei=CVFGnUgvG_2VEYjMrsZLs0MP&utm_campaign&utm_source=search"
+              class="fa fa-google"></a>
           </li>
         </ul>
       </div>

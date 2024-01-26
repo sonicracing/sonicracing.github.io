@@ -14,6 +14,7 @@
       --link-hover-color: #2596be;
     }
 
+    /* contact form styling */
     .contact-form {
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -22,6 +23,7 @@
       width: 40%;
     }
 
+    /* Contact info section styling */
     .contact-email-phone {
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -76,22 +78,21 @@
       justify-content: center;
     }
 
-    @media screen {
-      @media screen and (max-width: 860px) {
-        #contact-flex {
-          align-content: center;
-          display: flex;
-          flex-direction: column;
-          margin: 5vw;
-        }
+    /* On mobile devices the contact form and details take up the whole width in column */
+    @media screen and (max-width: 860px) {
+      #contact-flex {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 5vw;
+      }
 
-        .contact-email-phone {
-          width: 90vw;
-        }
+      .contact-email-phone {
+        width: 90vw;
+      }
 
-        .contact-form {
-          width: 90vw;
-        }
+      .contact-form {
+        width: 90vw;
       }
     }
   </style>

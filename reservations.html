@@ -74,19 +74,39 @@
       height: 50%;
       margin-bottom: 2px;
     }
+
+    /* styling of the flexbox of the reservation section */
+    #reservation-flex {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* makes the flexbox into a column when on a smaller device */
+    @media screen and (max-width: 975px) {
+      #reservation-flex {
+        flex-direction: column;
+      }
+
+      .find-table {
+        height: 50vh;
+      }
+    }
   </style>
 </head>
 
 <body>
   <nav>
+    <!-- navigation -->
     <div>
       <!-- logo -->
       <logo><a href="index.html"><img class="logo" title="logo" src="images/modern_blufish.png"
             title="modern_blufish_logo" alt="a modern logo which resembles a blue fish"></a></logo>
     </div>
     <div>
+      <!-- hamburger menu -->
       <img class="hamburger" src="images/hamburger.png" alt="hamburger menu" onclick="ShowMobileMenu()">
       <ul class="pc-menu">
+        <!-- pc menu -->
         <li><a href="contact.html">Contact</a></li>
         <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
         <li><a href="order.html">Order</a></li>
@@ -95,6 +115,7 @@
         </li>
         <li><a href="index.html">Home</a></li>
       </ul>
+      <!-- mobile menu -->
       <ul id="mobile-menu">
         <li><a href="contact.html">Contact</a></li>
         <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
@@ -107,10 +128,11 @@
     </div>
   </nav>
   <header>
+    <!-- header title of the page -->
     <h1 class="background-header-image">Reservations</h1>
   </header>
   <main>
-    <div class="flex">
+    <div id="reservation-flex">
       <div class="contact-address">
         <div class="contact-address-text">
           <h2>

@@ -9,6 +9,7 @@
   <script src="script.js"></script>
   <link rel="icon" type="image/x-icon" href="images/modern_blufish.png" />
   <style>
+    /* makes the order button smaller when device gets smaller */
     @media screen and (max-width: 1203px) {
       .order-image {
         display: block;
@@ -18,6 +19,7 @@
       }
     }
 
+    /* makes te order buttons take up the whole width on mobile */
     @media screen and (max-width: 809px) {
       .order-image {
         width: 80vw;
@@ -39,7 +41,9 @@
             title="modern_blufish_logo" alt="a modern logo which resembles a blue fish"></a></logo>
     </div>
     <div>
+      <!-- hamburger menu -->
       <img class="hamburger" src="images/hamburger.png" alt="hamburger menu" onclick="ShowMobileMenu()">
+      <!-- pc menu -->
       <ul class="pc-menu">
         <li><a href="contact.html">Contact</a></li>
         <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
@@ -49,6 +53,7 @@
         </li>
         <li><a href="index.html">Home</a></li>
       </ul>
+      <!-- mobile menu -->
       <ul id="mobile-menu">
         <li><a href="contact.html">Contact</a></li>
         <li><a class="reservation-link" href="reservations.html">Reservations</a></li>

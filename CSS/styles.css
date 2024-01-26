@@ -164,7 +164,7 @@ li a:hover {
     right: 0vw;
     flex-direction: column-reverse;
   }
-
+  /* mobile menu styling */
   #mobile-menu li {
     float: none;
   }
@@ -177,10 +177,12 @@ li a:hover {
     visibility: visible;
   }
 }
+/* logo styling */
 .logo {
   width: 100px;
   height: auto;
 }
+/* footer logo */
 .footer-logo {
   width: 100%;
   height: auto;
@@ -199,9 +201,8 @@ li a:hover {
   border: solid --link-hover-color 2px;
   color: var(--link-hover-color);
 }
-
+/* images on the order page styling */
 .highlight-details {
-  border: 1px blue solid;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -216,8 +217,10 @@ li a:hover {
   width: 30%;
   margin-right: 2%;
   overflow: hidden;
+  border-radius: 10px;
 }
 
+/* Order image stacks up and takes up whole width on mobile device */
 @media screen and (max-width: 810px) {
   .highlight-detail {
     width: 98%;
@@ -259,7 +262,7 @@ p.small-detail {
   height: auto;
   justify-content: center;
 }
-
+/* footer stling */
 footer .col4 {
   padding: 70px 10px;
 }
@@ -280,17 +283,18 @@ footer .col4 {
 .fullwidth {
   width: 100%;
 }
-
+/* social icons */
 .right-social {
   padding-right: 50px;
   margin-right: 0px;
 }
+/* footer styling on mobile devices */
 @media screen and (max-width: 600px) {
   .col4 {
     width: 100vw;
   }
   body {
-    width: 120vw;
+    width: 100vw;
   }
 }
 @media screen and (max-width: 938px) {
@@ -339,7 +343,7 @@ footer .col4 {
     display: none;
   }
 }
-
+/* mobile menu */
 @media screen and (max-width: 810px) {
   .review-container {
     flex-direction: column;
