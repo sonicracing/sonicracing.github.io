@@ -6,19 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Order</title>
   <link rel="stylesheet" href="CSS/styles.css" />
+  <script src="script.js"></script>
   <link rel="icon" type="image/x-icon" href="images/modern_blufish.png" />
+  <style>
+    @media screen and (max-width: 1203px) {
+      .order-image {
+        display: block;
+        width: 35vw;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
+
+    @media screen and (max-width: 809px) {
+      .order-image {
+        width: 80vw;
+      }
+
+      #order-flex {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <!-- navigation -->
   <nav>
     <div>
-      <logo><a href="index.html"><img class="logo" src="images/modern_blufish.png" title="modern_blufish_logo"
-            alt="a modern logo which resembles a blue fish"></a></logo>
+      <!-- logo -->
+      <logo><a href="index.html"><img class="logo" title="logo" src="images/modern_blufish.png"
+            title="modern_blufish_logo" alt="a modern logo which resembles a blue fish"></a></logo>
     </div>
     <div>
-      <ul>
-        <li><img class="hamburger" src="images/hamburger.png" alt="hamburger menu"></li>
+      <img class="hamburger" src="images/hamburger.png" alt="hamburger menu" onclick="ShowMobileMenu()">
+      <ul class="pc-menu">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a
+            href="https://order.online/store/blufish-japanese-restaurant-winnipeg-951146/?hideModal=true&pickup=true">Menu</a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <ul id="mobile-menu">
         <li><a href="contact.html">Contact</a></li>
         <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
         <li><a href="order.html">Order</a></li>
@@ -33,15 +64,20 @@
     <h1 class="background-header-image">Order Online</h1>
   </header>
   <main>
-    <div class="flex">
+    <div class="flex" id="order-flex">
       <!-- order skip the dishes -->
-      <a href="https://www.skipthedishes.com/blufish/order">
-        <img class="order-image" src="images/skip_the_dishes.JPG" alt="order with skip the dishes button">
-      </a>
+      <div>
+        <a class="order-image" href="https://www.skipthedishes.com/blufish/order">
+          <img class="order-image" src="images/skip_the_dishes.JPG" alt="order with skip the dishes button">
+        </a>
+      </div>
       <!-- order doordash -->
-      <a href="https://order.online/store/blufish-japanese-restaurant-winnipeg-951146/?hideModal=true&pickup=true">
-        <img class="order-image" src="images/doordash.JPG" alt="order with doordash button">
-      </a>
+      <div>
+        <a class="order-image"
+          href="https://order.online/store/blufish-japanese-restaurant-winnipeg-951146/?hideModal=true&pickup=true">
+          <img class="order-image" src="images/doordash.JPG" alt="order with doordash button">
+        </a>
+      </div>
     </div>
     <!-- showing off the fresh dishes of blufish -->
     <div>

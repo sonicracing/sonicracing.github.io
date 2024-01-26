@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
   <link rel="stylesheet" href="CSS/styles.css" />
+  <script src="script.js"></script>
   <link rel="icon" type="image/x-icon" href="images/modern_blufish.png" />
   <style>
     :root {
@@ -69,6 +70,30 @@
       text-align: center;
       font-size: 1.1rem;
     }
+
+    #contact-flex {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media screen {
+      @media screen and (max-width: 860px) {
+        #contact-flex {
+          align-content: center;
+          display: flex;
+          flex-direction: column;
+          margin: 5vw;
+        }
+
+        .contact-email-phone {
+          width: 90vw;
+        }
+
+        .contact-form {
+          width: 90vw;
+        }
+      }
+    }
   </style>
 </head>
 
@@ -76,12 +101,22 @@
   <!-- navigation -->
   <nav>
     <div>
-      <logo><a href="index.html"><img class="logo" src="images/modern_blufish.png" title="modern_blufish_logo"
-            alt="a modern logo which resembles a blue fish"></a></logo>
+      <!-- logo -->
+      <logo><a href="index.html"><img class="logo" title="logo" src="images/modern_blufish.png"
+            title="modern_blufish_logo" alt="a modern logo which resembles a blue fish"></a></logo>
     </div>
     <div>
-      <ul>
-        <li><img class="hamburger" src="images/hamburger.png" alt="hamburger menu"></li>
+      <img class="hamburger" src="images/hamburger.png" alt="hamburger menu" onclick="ShowMobileMenu()">
+      <ul class="pc-menu">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a
+            href="https://order.online/store/blufish-japanese-restaurant-winnipeg-951146/?hideModal=true&pickup=true">Menu</a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <ul id="mobile-menu">
         <li><a href="contact.html">Contact</a></li>
         <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
         <li><a href="order.html">Order</a></li>
@@ -97,7 +132,7 @@
   </header>
   <main>
     <!-- Contact Info -->
-    <div style="display: flex;justify-content: center;">
+    <div id="contact-flex">
       <div class="contact-email-phone">
         <div class="contact-info">
           <p class="small-title">Email:</p>
