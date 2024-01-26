@@ -34,3 +34,13 @@ function redirectToListenLive() {
   // Replace 'your_listen_live_url' with the actual URL you want to redirect to
   window.location.href = "listenlive.html";
 }
+
+function ShowMobileMenu() {
+  var mobmenu = document.getElementById("mobile-menu");
+
+  if (mobmenu.style.display === "flex") {
+    mobmenu.style.display = "none";
+  } else {
+    mobmenu.style.display = "flex";
+  }
+}

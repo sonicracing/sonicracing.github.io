@@ -154,8 +154,23 @@ li a:hover {
 }
 /* when screen size is small it shows mobile menu */
 @media screen and (max-width: 810px) {
-  li a {
+  #mobile-menu {
     display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    top: 100%;
+    right: 0vw;
+    flex-direction: column-reverse;
+  }
+
+  #mobile-menu li {
+    float: none;
+  }
+
+  #mobile-menu li a {
+    display: block;
   }
 
   .hamburger {
@@ -313,4 +328,34 @@ footer .col4 {
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
+}
+@media screen and (min-width: 811px) {
+  .pc-menu {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .review-container {
+    flex-direction: column;
+  }
+
+  #mobile-menu {
+    display: none;
+  }
+
+  .pc-menu {
+    display: none;
+  }
+
+  .review {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+  }
 }

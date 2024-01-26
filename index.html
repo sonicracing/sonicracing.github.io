@@ -144,18 +144,6 @@
       font-size: 3rem;
       margin: 0px;
     }
-
-    @media screen and (max-width: 810px) {
-      .review-container {
-        flex-direction: column;
-      }
-
-      .review {
-        width: 90%;
-        margin: auto;
-        margin-top: 10px;
-      }
-    }
   </style>
 </head>
 
@@ -168,8 +156,17 @@
             title="modern_blufish_logo" alt="a modern logo which resembles a blue fish"></a></logo>
     </div>
     <div>
-      <ul>
-        <li><img class="hamburger" src="images/hamburger.png" alt="hamburger menu"></li>
+      <img class="hamburger" src="images/hamburger.png" alt="hamburger menu" onclick="ShowMobileMenu()">
+      <ul class="pc-menu">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a
+            href="https://order.online/store/blufish-japanese-restaurant-winnipeg-951146/?hideModal=true&pickup=true">Menu</a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <ul id="mobile-menu">
         <li><a href="contact.html">Contact</a></li>
         <li><a class="reservation-link" href="reservations.html">Reservations</a></li>
         <li><a href="order.html">Order</a></li>
