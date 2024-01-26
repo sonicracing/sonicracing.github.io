@@ -1,8 +1,10 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   const photos = document.querySelectorAll(".fade");
-//   // Initial setup
-//   photos[currentPhotoIndex].style.display = "block";
-// });
+var currentPhotoIndex = 0;
+
+document.addEventListener("DOMContentLoaded", function () {
+  const photos = document.querySelectorAll(".fade");
+  // Initial setup
+  photos[currentPhotoIndex].style.display = "block";
+});
 
 //function for showing the next photo in slideshow
 function showNextPhoto() {
@@ -22,8 +24,6 @@ function showPrevPhoto() {
   }
   photos[currentPhotoIndex].style.display = "block";
 }
-
-var currentPhotoIndex = 0;
 
 // Automatically switch photos every 5 seconds (adjust as needed)
 setInterval(showNextPhoto, 4000);
